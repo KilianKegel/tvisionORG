@@ -127,7 +127,7 @@ if (MASTER_PROJECT)
     option(TV_BUILD_EXAMPLES "Build example apps" ON)
 endif()
 
-option(TV_USE_STATIC_RTL "Link against the static version of the runtime library (MSVC only)" OFF)
+option(TV_USE_STATIC_RTL "Link against the static version of the runtime library (MSVC only)" ON)
 if (MSVC)
     set(MAY_USE_STATIC_RTL TRUE)
 elseif (TV_USE_STATIC_RTL)
