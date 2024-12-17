@@ -1,3 +1,10 @@
+### HOW TO BUILD STATICALLY LINKED VERSION OF TVISION      
+1. modify all lowercase letter-projects (all but **ALL_BUILD**, **INSTALL**, **ZERO_CHECK**):
+    * **Properties\C++\Codegeneration**
+         * **Enable C++ Exceptions: NO**
+         * **Runtime Library: Multi-threaded (/MT)NO**
+         * **Security Check: Disable Security Check (/GS-)**
+
 # Turbo Vision
 
 A modern port of Turbo Vision 2.0, the classical framework for text-based user interfaces. Now cross-platform and with Unicode support.
